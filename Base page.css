@@ -182,6 +182,96 @@ footer {
     display: flex;
 }
 
+/* General responsive styles */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  /* Adjust navigation for mobile */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    margin: 5px 0;
+  }
+
+  /* Make images responsive */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Adjust portfolio grid for mobile */
+  .portfolio-container {
+    grid-template-columns: 1fr;
+  }
+
+  .portfolio-item {
+    margin-bottom: 20px;
+  }
+
+  /* Adjust project sections for mobile */
+  .project-section {
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .project-content {
+    width: 100%;
+  }
+
+  .project-gallery {
+    flex-direction: column;
+  }
+
+  .project-gallery img {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  /* Adjust software grid for mobile */
+  .software-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Adjust footer for mobile */
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    margin-bottom: 20px;
+  }
+}
+
+/* Improve image sliders for mobile */
+@media screen and (max-width: 768px) {
+  .image-slider {
+    height: 200px;
+  }
+
+  .image-slider img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .slider-dots {
+    bottom: 10px;
+  }
+}
+
 .footer-subscribe input {
     padding: 0.5rem;
     border: 1px solid #ccc;
